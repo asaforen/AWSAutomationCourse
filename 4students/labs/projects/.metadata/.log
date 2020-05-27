@@ -1,0 +1,1607 @@
+!SESSION 2013-01-31 08:54:59.508 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -showLocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -data C:\labs\projects -product org.eclipse.epp.package.cpp.product -showLocation
+
+!ENTRY org.eclipse.ui 4 4 2013-01-31 08:55:04.531
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.manageConfigsAction2
+
+!ENTRY org.eclipse.ui 4 4 2013-01-31 08:55:04.547
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.buildConfigMenuAction
+
+!ENTRY org.eclipse.ui 4 4 2013-01-31 08:55:04.547
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.wsselection
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:44.817
+!MESSAGE The stored version is invalid (python 3.3). Setting default.
+!STACK 0
+java.lang.RuntimeException: The stored version is invalid (python 3.3). Setting default.
+	at org.python.pydev.core.log.Log.log(Log.java:50)
+	at org.python.pydev.plugin.nature.PythonNature.getVersionAndError(PythonNature.java:823)
+	at org.python.pydev.plugin.nature.PythonNature.getVersion(PythonNature.java:811)
+	at org.python.pydev.plugin.nature.PythonNature.getInterpreterType(PythonNature.java:921)
+	at org.python.pydev.plugin.nature.PythonNature.getRelatedInterpreterManager(PythonNature.java:986)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1186)
+	at org.python.pydev.plugin.nature.PythonNature.getConfigErrorsAndInfo(PythonNature.java:1259)
+	at org.python.pydev.navigator.ProjectInfoForPackageExplorer.getConfigErrorsAndInfo(ProjectInfoForPackageExplorer.java:125)
+	at org.python.pydev.navigator.ProjectInfoForPackageExplorer.recreateInfo(ProjectInfoForPackageExplorer.java:69)
+	at org.python.pydev.navigator.ProjectInfoForPackageExplorer.<init>(ProjectInfoForPackageExplorer.java:60)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getProjectInfo(PythonBaseModelProvider.java:425)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getProjectSourceFolders(PythonBaseModelProvider.java:444)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getResourceInPythonModel(PythonBaseModelProvider.java:378)
+	at org.python.pydev.navigator.PythonBaseModelProvider.getResourceInPythonModel(PythonBaseModelProvider.java:363)
+	at org.python.pydev.navigator.PythonModelProvider.wrapChildren(PythonModelProvider.java:454)
+	at org.python.pydev.navigator.PythonModelProvider.convertToPythonElementsAddOrRemove(PythonModelProvider.java:360)
+	at org.python.pydev.navigator.PythonModelProvider.getPipelinedChildren(PythonModelProvider.java:134)
+	at org.python.pydev.navigator.PythonModelProvider.getPipelinedElements(PythonModelProvider.java:163)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getPipelinedElements(SafeDelegateTreeContentProvider.java:192)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.pipelineChildren(NavigatorContentServiceContentProvider.java:204)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.access$1(NavigatorContentServiceContentProvider.java:192)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:139)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getElements(NavigatorContentServiceContentProvider.java:114)
+	at org.eclipse.jface.viewers.StructuredViewer.getRawChildren(StructuredViewer.java:1010)
+	at org.eclipse.jface.viewers.ColumnViewer.getRawChildren(ColumnViewer.java:703)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1351)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:391)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:917)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:620)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2645)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1923)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1898)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1855)
+	at org.eclipse.ui.navigator.CommonViewer.internalRefresh(CommonViewer.java:561)
+	at org.eclipse.jface.viewers.StructuredViewer$8.run(StructuredViewer.java:1535)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1533)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:548)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:353)
+	at org.eclipse.cdt.ui.CElementContentProvider$RefreshProjectState.refresh(CElementContentProvider.java:393)
+	at org.eclipse.cdt.ui.CElementContentProvider$1.run(CElementContentProvider.java:448)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:173)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:388)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.ui.internal.wizards.datatransfer.WizardProjectsImportPage.createProjects(WizardProjectsImportPage.java:1261)
+	at org.eclipse.ui.wizards.datatransfer.ExternalProjectImportWizard.performFinish(ExternalProjectImportWizard.java:113)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.ui.internal.handlers.WizardHandler$Import.executeHandler(WizardHandler.java:152)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:279)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:229)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:210)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:131)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:171)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:500)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:157)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:44.848
+!MESSAGE Interpreter: Python 3 not found
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Interpreter: Python 3 not found
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:445)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1198)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:486)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:470)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:36)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:170)
+	at org.python.pydev.plugin.nature.PythonNature$RebuildPythonNatureModules.run(PythonNature.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:44.911
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\01 Introduction\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:44.911
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\02 Fundamental Variables\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:44.973
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\04 String Handling\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.051
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\13 Multitasking\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.082
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\11 Classes and OOP\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.129
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\12 Error Handling and Exceptions\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.145
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\10 Modules and Packages\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.145
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\09 Advanced Collections\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.160
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\08 Functions\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.176
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\07 File handling\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.191
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\06 Regular Expressions\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.191
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\05 Collections\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:55:45.207
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\org.eclipse.core.resources\.projects\03 Flow Control\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY com.aptana.shared_core 1 1 2013-01-31 08:57:08.293
+!MESSAGE Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+- Chosen interpreter (name and file):'Tuple [Python 3 -- C:\Python33\python.exe]
+- Ok, file is non-null. Getting info on:C:\Python33\python.exe
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  C:\Python33\python.exe -u C:\eclipse\plugins\org.python.pydev_2.7.1.2012100913\pysrc\interpreterInfo.py
+- Setting task name:Making pythonpath environment... C:\Python33\python.exe -u C:\eclipse\plugins\org.python.pydev_2.7.1.2012100913\pysrc\interpreterInfo.py
+- Setting task name:Making exec... C:\Python33\python.exe -u C:\eclipse\plugins\org.python.pydev_2.7.1.2012100913\pysrc\interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>Python 3</name>
+<version>3.3</version>
+<executable>C:\Python33\python.exe</executable>
+<lib>C:\Python33\DLLs</lib>
+<lib>C:\Python33\lib</lib>
+<lib>C:\Python33</lib>
+<lib>C:\Python33\lib\site-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winapi</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>winreg</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+
+!STACK 0
+java.lang.RuntimeException: Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+- Chosen interpreter (name and file):'Tuple [Python 3 -- C:\Python33\python.exe]
+- Ok, file is non-null. Getting info on:C:\Python33\python.exe
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  C:\Python33\python.exe -u C:\eclipse\plugins\org.python.pydev_2.7.1.2012100913\pysrc\interpreterInfo.py
+- Setting task name:Making pythonpath environment... C:\Python33\python.exe -u C:\eclipse\plugins\org.python.pydev_2.7.1.2012100913\pysrc\interpreterInfo.py
+- Setting task name:Making exec... C:\Python33\python.exe -u C:\eclipse\plugins\org.python.pydev_2.7.1.2012100913\pysrc\interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>Python 3</name>
+<version>3.3</version>
+<executable>C:\Python33\python.exe</executable>
+<lib>C:\Python33\DLLs</lib>
+<lib>C:\Python33\lib</lib>
+<lib>C:\Python33</lib>
+<lib>C:\Python33\lib\site-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winapi</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>winreg</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+</xml>
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:62)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor.getNewInputObject(AbstractInterpreterEditor.java:1074)
+	at org.python.copiedfromeclipsesrc.PythonListEditor.addPressed(PythonListEditor.java:135)
+	at org.python.copiedfromeclipsesrc.PythonListEditor$1.widgetSelected(PythonListEditor.java:225)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:215)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:65)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY com.aptana.shared_core 1 1 2013-01-31 08:57:10.524
+!MESSAGE Restoring info for: C:\Python33\python.exe
+!STACK 0
+java.lang.RuntimeException: Restoring info for: C:\Python33\python.exe
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:495)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:328)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:618)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:253)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: java.io.IOException: Expecting: C:\labs\projects\.metadata\.plugins\org.python.pydev\v1_edseys1kucp67tywmfck6dcvp\modulesKeys to exist (and be a file).
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:267)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:360)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:493)
+	... 4 more
+
+!ENTRY com.aptana.shared_core 1 1 2013-01-31 08:57:10.820
+!MESSAGE Finished restoring information for: C:\Python33\python.exe at: C:\labs\projects\.metadata\.plugins\org.python.pydev\v1_edseys1kucp67tywmfck6dcvp
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: C:\Python33\python.exe at: C:\labs\projects\.metadata\.plugins\org.python.pydev\v1_edseys1kucp67tywmfck6dcvp
+	at org.python.pydev.core.log.Log.logInfo(Log.java:62)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:540)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:328)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:618)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:253)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.aptana.shared_core 4 4 2013-01-31 08:57:11.054
+!MESSAGE Info: Rebuilding internal caches: C:\labs\projects\.metadata\.plugins\com.python.pydev.analysis\python_v1_edseys1kucp67tywmfck6dcvp\python.pydevsysteminfo (Expected error to be provided and got no error!)
+!SESSION 2013-02-19 11:34:19.500 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\labs\projects\
+
+!ENTRY org.eclipse.jface 2 0 2013-02-19 11:34:21.638
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-02-19 11:34:21.638
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Class Browser,
+		Show Class Browser,
+		Category(org.python.pydev.ui.category.source,Pydev - Editor,Pydev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.python.pydev 4 4 2013-02-19 11:34:37.362
+!MESSAGE C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+!STACK 0
+java.io.FileNotFoundException: C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.python.pydev.plugin.PydevPlugin.writeToWorkspaceMetadata(PydevPlugin.java:589)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3$1.run(AbstractInterpreterManager.java:374)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3.run(AbstractInterpreterManager.java:367)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4584)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:360)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfos(AbstractInterpreterManager.java:161)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.<init>(AbstractInterpreterManager.java:106)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.<init>(PythonInterpreterManager.java:24)
+	at org.python.pydev.plugin.PydevPlugin.start(PydevPlugin.java:180)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:235)
+	at org.eclipse.ui.internal.EditorManager.createPart(EditorManager.java:845)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:609)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1254)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1207)
+	at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1606)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:497)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:103)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:483)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:112)
+	at org.eclipse.ui.internal.EditorSashContainer.addEditor(EditorSashContainer.java:63)
+	at org.eclipse.ui.internal.EditorAreaHelper.addToLayout(EditorAreaHelper.java:225)
+	at org.eclipse.ui.internal.EditorAreaHelper.addEditor(EditorAreaHelper.java:213)
+	at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:778)
+	at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:677)
+	at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:638)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2860)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2768)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2760)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2711)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2707)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2691)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2682)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:651)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:610)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:365)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:168)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:229)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:208)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:250)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:373)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:526)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:845)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:843)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1131)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1235)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:264)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:298)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.python.pydev 4 4 2013-02-19 11:34:37.362
+!MESSAGE java.lang.reflect.InvocationTargetException
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3.run(AbstractInterpreterManager.java:379)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4584)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:360)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfos(AbstractInterpreterManager.java:161)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.<init>(AbstractInterpreterManager.java:106)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.<init>(PythonInterpreterManager.java:24)
+	at org.python.pydev.plugin.PydevPlugin.start(PydevPlugin.java:180)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:235)
+	at org.eclipse.ui.internal.EditorManager.createPart(EditorManager.java:845)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:609)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1254)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1207)
+	at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1606)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:497)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:103)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:483)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:112)
+	at org.eclipse.ui.internal.EditorSashContainer.addEditor(EditorSashContainer.java:63)
+	at org.eclipse.ui.internal.EditorAreaHelper.addToLayout(EditorAreaHelper.java:225)
+	at org.eclipse.ui.internal.EditorAreaHelper.addEditor(EditorAreaHelper.java:213)
+	at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:778)
+	at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:677)
+	at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:638)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2860)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2768)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2760)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2711)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2707)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2691)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2682)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:651)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:610)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:365)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:168)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:229)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:208)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:250)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:373)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:526)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:845)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:843)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1131)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1235)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:264)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:298)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:477)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3.run(AbstractInterpreterManager.java:367)
+	... 111 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+	at org.python.pydev.plugin.PydevPlugin.writeToWorkspaceMetadata(PydevPlugin.java:594)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3$1.run(AbstractInterpreterManager.java:374)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	... 114 more
+Caused by: java.io.FileNotFoundException: C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.python.pydev.plugin.PydevPlugin.writeToWorkspaceMetadata(PydevPlugin.java:589)
+	... 116 more
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:34:38.517
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:144)
+	at org.python.pydev.plugin.nature.PythonNature.rebuildPath(PythonNature.java:621)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:574)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:304)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:232)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:399)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:696)
+	at org.python.pydev.editor.PyEdit.getPythonNature(PyEdit.java:1391)
+	at org.python.pydev.editor.PyEdit.getGrammarVersionProvider(PyEdit.java:1371)
+	at org.python.pydev.parser.PyParser.getGrammarProviderFromEdit(PyParser.java:224)
+	at org.python.pydev.parser.PyParser.<init>(PyParser.java:215)
+	at org.python.pydev.parser.PyParserManager.attachParserTo(PyParserManager.java:161)
+	at org.python.pydev.editor.PyEdit.doSetInput(PyEdit.java:717)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3043)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2600)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3061)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3088)
+	at org.python.pydev.editor.PyEdit.init(PyEdit.java:596)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:798)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:647)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1254)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1207)
+	at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1606)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:497)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:103)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:483)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:112)
+	at org.eclipse.ui.internal.EditorSashContainer.addEditor(EditorSashContainer.java:63)
+	at org.eclipse.ui.internal.EditorAreaHelper.addToLayout(EditorAreaHelper.java:225)
+	at org.eclipse.ui.internal.EditorAreaHelper.addEditor(EditorAreaHelper.java:213)
+	at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:778)
+	at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:677)
+	at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:638)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2860)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2768)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2760)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2711)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2707)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2691)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2682)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:651)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:610)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:365)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:168)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:229)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:208)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:250)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:373)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:526)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:845)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:843)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1131)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1235)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:264)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:298)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:34:38.517
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.trimAndReplaceVariablesIfNeeded(PythonPathNature.java:412)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectSourcePath(PythonPathNature.java:402)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:146)
+	at org.python.pydev.plugin.nature.PythonNature.rebuildPath(PythonNature.java:621)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:574)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:304)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:232)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:399)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:696)
+	at org.python.pydev.editor.PyEdit.getPythonNature(PyEdit.java:1391)
+	at org.python.pydev.editor.PyEdit.getGrammarVersionProvider(PyEdit.java:1371)
+	at org.python.pydev.parser.PyParser.getGrammarProviderFromEdit(PyParser.java:224)
+	at org.python.pydev.parser.PyParser.<init>(PyParser.java:215)
+	at org.python.pydev.parser.PyParserManager.attachParserTo(PyParserManager.java:161)
+	at org.python.pydev.editor.PyEdit.doSetInput(PyEdit.java:717)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3043)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2600)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3061)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3088)
+	at org.python.pydev.editor.PyEdit.init(PyEdit.java:596)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:798)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:647)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1254)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1207)
+	at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1606)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:497)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:103)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:483)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:112)
+	at org.eclipse.ui.internal.EditorSashContainer.addEditor(EditorSashContainer.java:63)
+	at org.eclipse.ui.internal.EditorAreaHelper.addToLayout(EditorAreaHelper.java:225)
+	at org.eclipse.ui.internal.EditorAreaHelper.addEditor(EditorAreaHelper.java:213)
+	at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:778)
+	at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:677)
+	at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:638)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2860)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2768)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2760)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2711)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2707)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2691)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2682)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:651)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:610)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:365)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:168)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:229)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:208)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:250)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:373)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:526)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:845)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:843)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1131)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1235)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:264)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:298)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:34:38.517
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.trimAndReplaceVariablesIfNeeded(PythonPathNature.java:412)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectExternalSourcePath(PythonPathNature.java:431)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:148)
+	at org.python.pydev.plugin.nature.PythonNature.rebuildPath(PythonNature.java:621)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:574)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:304)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:232)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:399)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:696)
+	at org.python.pydev.editor.PyEdit.getPythonNature(PyEdit.java:1391)
+	at org.python.pydev.editor.PyEdit.getGrammarVersionProvider(PyEdit.java:1371)
+	at org.python.pydev.parser.PyParser.getGrammarProviderFromEdit(PyParser.java:224)
+	at org.python.pydev.parser.PyParser.<init>(PyParser.java:215)
+	at org.python.pydev.parser.PyParserManager.attachParserTo(PyParserManager.java:161)
+	at org.python.pydev.editor.PyEdit.doSetInput(PyEdit.java:717)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3043)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2600)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3061)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3088)
+	at org.python.pydev.editor.PyEdit.init(PyEdit.java:596)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:798)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:647)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1254)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1207)
+	at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1606)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:497)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:103)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:483)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:112)
+	at org.eclipse.ui.internal.EditorSashContainer.addEditor(EditorSashContainer.java:63)
+	at org.eclipse.ui.internal.EditorAreaHelper.addToLayout(EditorAreaHelper.java:225)
+	at org.eclipse.ui.internal.EditorAreaHelper.addEditor(EditorAreaHelper.java:213)
+	at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:778)
+	at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:677)
+	at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:638)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2860)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2768)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2760)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2711)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2707)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2691)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2682)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:651)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:610)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:365)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:168)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:229)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:208)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:250)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:373)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:526)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:845)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:843)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1131)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1235)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:264)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:298)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:34:38.829
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:144)
+	at org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager.resolveModuleOnlyInProjectSources(ProjectModulesManager.java:320)
+	at org.python.pydev.plugin.nature.PythonNature.resolveModuleOnlyInProjectSources(PythonNature.java:880)
+	at org.python.pydev.plugin.nature.PythonNature.resolveModuleOnlyInProjectSources(PythonNature.java:265)
+	at com.python.pydev.analysis.builder.AnalysisParserObserver.parserChanged(AnalysisParserObserver.java:89)
+	at org.python.pydev.parser.PyParser.fireParserChanged(PyParser.java:341)
+	at org.python.pydev.parser.PyParser.reparseDocument(PyParser.java:461)
+	at org.python.pydev.parser.ParserScheduler.reparseDocument(ParserScheduler.java:150)
+	at org.python.pydev.parser.ParsingThread.run(ParsingThread.java:46)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:34:38.829
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.trimAndReplaceVariablesIfNeeded(PythonPathNature.java:412)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectSourcePath(PythonPathNature.java:402)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:146)
+	at org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager.resolveModuleOnlyInProjectSources(ProjectModulesManager.java:320)
+	at org.python.pydev.plugin.nature.PythonNature.resolveModuleOnlyInProjectSources(PythonNature.java:880)
+	at org.python.pydev.plugin.nature.PythonNature.resolveModuleOnlyInProjectSources(PythonNature.java:265)
+	at com.python.pydev.analysis.builder.AnalysisParserObserver.parserChanged(AnalysisParserObserver.java:89)
+	at org.python.pydev.parser.PyParser.fireParserChanged(PyParser.java:341)
+	at org.python.pydev.parser.PyParser.reparseDocument(PyParser.java:461)
+	at org.python.pydev.parser.ParserScheduler.reparseDocument(ParserScheduler.java:150)
+	at org.python.pydev.parser.ParsingThread.run(ParsingThread.java:46)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:34:38.829
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.trimAndReplaceVariablesIfNeeded(PythonPathNature.java:412)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectExternalSourcePath(PythonPathNature.java:431)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:148)
+	at org.python.pydev.editor.codecompletion.revisited.ProjectModulesManager.resolveModuleOnlyInProjectSources(ProjectModulesManager.java:320)
+	at org.python.pydev.plugin.nature.PythonNature.resolveModuleOnlyInProjectSources(PythonNature.java:880)
+	at org.python.pydev.plugin.nature.PythonNature.resolveModuleOnlyInProjectSources(PythonNature.java:265)
+	at com.python.pydev.analysis.builder.AnalysisParserObserver.parserChanged(AnalysisParserObserver.java:89)
+	at org.python.pydev.parser.PyParser.fireParserChanged(PyParser.java:341)
+	at org.python.pydev.parser.PyParser.reparseDocument(PyParser.java:461)
+	at org.python.pydev.parser.ParserScheduler.reparseDocument(ParserScheduler.java:150)
+	at org.python.pydev.parser.ParsingThread.run(ParsingThread.java:46)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:34:39.328
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:66)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:158)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:125)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:94)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2013-02-19 11:43:03.776 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\labs\projects\
+
+!ENTRY org.python.pydev 4 4 2013-02-19 11:43:05.290
+!MESSAGE C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+!STACK 0
+java.io.FileNotFoundException: C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.python.pydev.plugin.PydevPlugin.writeToWorkspaceMetadata(PydevPlugin.java:589)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3$1.run(AbstractInterpreterManager.java:374)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3.run(AbstractInterpreterManager.java:367)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4584)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:360)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfos(AbstractInterpreterManager.java:161)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.<init>(AbstractInterpreterManager.java:106)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.<init>(PythonInterpreterManager.java:24)
+	at org.python.pydev.plugin.PydevPlugin.start(PydevPlugin.java:180)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:235)
+	at org.eclipse.ui.internal.EditorManager.createPart(EditorManager.java:845)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:609)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:271)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1429)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:942)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Workbench.java:1567)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2548)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.python.pydev 4 4 2013-02-19 11:43:05.290
+!MESSAGE java.lang.reflect.InvocationTargetException
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3.run(AbstractInterpreterManager.java:379)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4584)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:360)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfos(AbstractInterpreterManager.java:161)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.<init>(AbstractInterpreterManager.java:106)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.<init>(PythonInterpreterManager.java:24)
+	at org.python.pydev.plugin.PydevPlugin.start(PydevPlugin.java:180)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.registry.EditorDescriptor.createEditor(EditorDescriptor.java:235)
+	at org.eclipse.ui.internal.EditorManager.createPart(EditorManager.java:845)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:609)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:271)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1429)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:942)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Workbench.java:1567)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2548)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:477)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3.run(AbstractInterpreterManager.java:367)
+	... 74 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+	at org.python.pydev.plugin.PydevPlugin.writeToWorkspaceMetadata(PydevPlugin.java:594)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager$3$1.run(AbstractInterpreterManager.java:374)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	... 77 more
+Caused by: java.io.FileNotFoundException: C:\labs\projects\.metadata\.plugins\org.python.pydev\XFB5dGhvbjMzXHB5dGhvbi5leGU8L2V4ZWN1dGFibGU+PGxpYj5DOlxQeXRob24zM1xETExzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWI8L2xpYj48bGliPkM6XFB5dGhvbjMzPC9saWI+PGxpYj5DOlxQeXRob24zM1xsaWJcc2l0ZS1wYWNrYWdlczwvbGliPjxmb3JjZWRfbGliPkltYWdlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPk9wZW5HTDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fYXN0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9iaXNlY3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2J5dGVzaW88L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX2NuPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfaGs8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19pc28yMDIyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2RlY3NfanA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2NvZGVjc19rcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY29kZWNzX3R3PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9jb2xsZWN0aW9uczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fY3N2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fZmlsZWlvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9mdW5jdG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2hlYXBxPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9ob3RzaG90PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9pbXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2lvPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9qc29uPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9sb2NhbGU8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X2xzcHJvZjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fbWQ1PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9tdWx0aWJ5dGVjb2RlYzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fcGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9yYW5kb208L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NoYTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc2hhMjU2PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zaGE1MTI8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3NyZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5fc3RyaW5nPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl9zdHJ1Y3Q8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N1YnByb2Nlc3M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3N5bXRhYmxlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl90aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dhcm5pbmdzPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93ZWFrcmVmPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPl93aW5hcGk8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+X3dpbnJlZzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hcnJheTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5hdGV4aXQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+YXVkaW9vcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5iaW5hc2NpaTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5idWlsdGluczwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jUGlja2xlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmNTdHJpbmdJTzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5jbWF0aDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5kYXRldGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lbWFpbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5lcnJubzwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5leGNlcHRpb25zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmZhdWx0aGFuZGxlcjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5mdXR1cmVfYnVpbHRpbnM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+Z2M8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+aGFzaGxpYjwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pbWFnZW9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPmltcDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5pdGVydG9vbHM8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bWFyc2hhbDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5tYXRoPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm1tYXA8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+bXN2Y3J0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm50PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm51bXB5PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9wZXJhdG9yPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPm9zLnBhdGg8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+cGFyc2VyPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnB5dGVzdDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zY2lweTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj5zaWduYWw8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+c29ja2V0PC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN0cm9wPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnN5czwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj50aHJlYWQ8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+dGltZTwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj53aW5yZWc8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3g8L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+d3hQeXRob248L2ZvcmNlZF9saWI+PGZvcmNlZF9saWI+eHhzdWJ0eXBlPC9mb3JjZWRfbGliPjxmb3JjZWRfbGliPnppcGltcG9ydDwvZm9yY2VkX2xpYj48Zm9yY2VkX2xpYj56bGliPC9mb3JjZWRfbGliPjwveG1sPg== (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.python.pydev.plugin.PydevPlugin.writeToWorkspaceMetadata(PydevPlugin.java:589)
+	... 79 more
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:43:05.617
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:144)
+	at org.python.pydev.plugin.nature.PythonNature.rebuildPath(PythonNature.java:621)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:574)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:304)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:232)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:399)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:696)
+	at org.python.pydev.editor.PyEdit.getPythonNature(PyEdit.java:1391)
+	at org.python.pydev.editor.PyEdit.getGrammarVersionProvider(PyEdit.java:1371)
+	at org.python.pydev.parser.PyParser.getGrammarProviderFromEdit(PyParser.java:224)
+	at org.python.pydev.parser.PyParser.<init>(PyParser.java:215)
+	at org.python.pydev.parser.PyParserManager.attachParserTo(PyParserManager.java:161)
+	at org.python.pydev.editor.PyEdit.doSetInput(PyEdit.java:717)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3043)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2600)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3061)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3088)
+	at org.python.pydev.editor.PyEdit.init(PyEdit.java:596)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:798)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:647)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:271)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1429)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:942)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Workbench.java:1567)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2548)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:43:05.617
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.trimAndReplaceVariablesIfNeeded(PythonPathNature.java:412)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectSourcePath(PythonPathNature.java:402)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:146)
+	at org.python.pydev.plugin.nature.PythonNature.rebuildPath(PythonNature.java:621)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:574)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:304)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:232)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:399)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:696)
+	at org.python.pydev.editor.PyEdit.getPythonNature(PyEdit.java:1391)
+	at org.python.pydev.editor.PyEdit.getGrammarVersionProvider(PyEdit.java:1371)
+	at org.python.pydev.parser.PyParser.getGrammarProviderFromEdit(PyParser.java:224)
+	at org.python.pydev.parser.PyParser.<init>(PyParser.java:215)
+	at org.python.pydev.parser.PyParserManager.attachParserTo(PyParserManager.java:161)
+	at org.python.pydev.editor.PyEdit.doSetInput(PyEdit.java:717)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3043)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2600)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3061)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3088)
+	at org.python.pydev.editor.PyEdit.init(PyEdit.java:596)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:798)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:647)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:271)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1429)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:942)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Workbench.java:1567)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2548)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:43:05.617
+!MESSAGE Unable to find interpreter named: Python 3. Available: 
+!STACK 0
+org.python.pydev.core.MisconfigurationException: Unable to find interpreter named: Python 3. Available: 
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:293)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpreterInfo(AbstractInterpreterManager.java:1)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1094)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:451)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:436)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:29)
+	at org.python.pydev.plugin.nature.PythonPathNature.trimAndReplaceVariablesIfNeeded(PythonPathNature.java:412)
+	at org.python.pydev.plugin.nature.PythonPathNature.getProjectExternalSourcePath(PythonPathNature.java:431)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:148)
+	at org.python.pydev.plugin.nature.PythonNature.rebuildPath(PythonNature.java:621)
+	at org.python.pydev.plugin.nature.PythonNature.init(PythonNature.java:574)
+	at org.python.pydev.plugin.nature.PythonNature.setProject(PythonNature.java:304)
+	at org.eclipse.core.internal.resources.NatureManager.createNature(NatureManager.java:232)
+	at org.eclipse.core.internal.resources.Project.getNature(Project.java:399)
+	at org.python.pydev.plugin.nature.PythonNature.getPythonNature(PythonNature.java:696)
+	at org.python.pydev.editor.PyEdit.getPythonNature(PyEdit.java:1391)
+	at org.python.pydev.editor.PyEdit.getGrammarVersionProvider(PyEdit.java:1371)
+	at org.python.pydev.parser.PyParser.getGrammarProviderFromEdit(PyParser.java:224)
+	at org.python.pydev.parser.PyParser.<init>(PyParser.java:215)
+	at org.python.pydev.parser.PyParserManager.attachParserTo(PyParserManager.java:161)
+	at org.python.pydev.editor.PyEdit.doSetInput(PyEdit.java:717)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3043)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2600)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3061)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3088)
+	at org.python.pydev.editor.PyEdit.init(PyEdit.java:596)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:798)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:647)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:271)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1429)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:942)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Workbench.java:1567)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2548)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.jface 2 0 2013-02-19 11:43:06.569
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-02-19 11:43:06.569
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Class Browser,
+		Show Class Browser,
+		Category(org.python.pydev.ui.category.source,Pydev - Editor,Pydev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.python.pydev.core 4 4 2013-02-19 11:43:07.708
+!MESSAGE Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 500 for URL: https://ping.aptana.com/ping.php
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.python.pydev.logging.ping.LogPingSender.sendPing(LogPingSender.java:66)
+	at org.python.pydev.logging.ping.SynchedLogPing.send(SynchedLogPing.java:158)
+	at org.python.pydev.logging.ping.AsyncLogPing.consumeAllCommands(AsyncLogPing.java:125)
+	at org.python.pydev.logging.ping.AsyncLogPing.access$0(AsyncLogPing.java:94)
+	at org.python.pydev.logging.ping.AsyncLogPing$1.run(AsyncLogPing.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
