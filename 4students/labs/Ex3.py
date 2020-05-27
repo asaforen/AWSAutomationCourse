@@ -10,11 +10,13 @@ else:
 pattern = os.path.join(dir,'*')
 
 # TODO: Use the glob.glob() function to obtain the list of filenames
-
 # TODO: use os.path.getsize to find each file's size
-
 # TODO: Add a test to only display files that are not zero length
-
 # TODO: Remove the leading directory name(s) from each filename before you print it - 
 # using os.path.basename()
+
+for files in glob.glob(pattern):
+    fileSize = os.path.getsize(files)
+    if fileSize > 0:
+        print(os.path.basename(files), "File Size is: ", fileSize)
 
