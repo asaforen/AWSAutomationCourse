@@ -15,7 +15,7 @@ pos = 0x03B1
 for cname in greek:
     try:
         char = chr(pos)  
-        print(cname,":",char)
+        print(f"{pos:#x} {cname:<12}: {char.lower()} {char.upper()}")
         pos += 1 
     except UnicodeEncodeError as err:
         print (cname, 'unknown')
