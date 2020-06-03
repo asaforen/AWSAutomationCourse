@@ -22,26 +22,32 @@ machines = {'user100': 'yogi',
             }
 
 # (a)	user14 no longer has a machine assigned
-
+machines['user14']=None
  
 # (b)	The name of user16's machine is changed to 'cinnamon' 
-
+machines['user15']='cinnamon'
 
 # (c)	user16 is leaving the company,
 # and a new user, user17, will be assigned his machine
+machines['user17']=machines['user16']
+del machines['user16']
 
+machines['user17'] = machines.pop['user16']  # another option
  
 # (d)	user4, user5, and user6 are all leaving at exactly the same time,
 # but their machine names are to be stored in a list called unallocated.
-
+unallocated = []
+for users in ('user4', 'user5', 'user6'):
+    unallocated.append(machines.pop(users))
 
 # (e) user8 gets another machine called 'kodiak' in addition to the one they already have.
-
+machines['user8']= machines['user8'],'kodiak'
 
 # (f)	Print a list of all the users, with their machines, in any order.
-
+for user, machine in machines.items():
+    print(user, machine)
 
 # (g)	Print a list of unallocated machines, sorted alphabetically.
 
- 
+print("list of unallocated machines: ", sorted(unallocated))
 
